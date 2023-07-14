@@ -1,5 +1,7 @@
 package com.platzi.markert.Percistence.entity;
 
+import java.util.List;
+
 import jakarta.persistence.*;
 
 @Entity

@@ -26,6 +26,7 @@ public class Producto {
     private Boolean estado;
 
     @ManyToOne
+    //no se va a borrar ni a insertar una categoria.simplemente se puede recuperar a que categoriapertenece un producto.
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 

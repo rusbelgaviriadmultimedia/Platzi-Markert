@@ -26,6 +26,8 @@ public class Compra {
     private String estado;
 
     @ManyToOne
+    // no se va a borrar ni a insertar una categoria.simplemente se puede recuperar,
+    // a que categoria pertenece un producto.
     @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 

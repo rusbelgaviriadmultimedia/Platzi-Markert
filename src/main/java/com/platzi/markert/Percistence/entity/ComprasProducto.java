@@ -14,13 +14,12 @@ public class ComprasProducto {
 
     @ManyToOne
     // no se va a borrar ni a insertar una categoria.simplemente se puede recuperar
-    // a que categoriapertenece un producto.
+    // a que categoria pertenece un producto.
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
     @ManyToOne
-    // no se va a borrar ni a insertar una categoria.simplemente se puede recuperar
-    // a que categoriapertenece un producto.
+    // no se va a borrar ni a insertar una categoria.simplemente se puede recuperar, a que categoria pertenece un producto.
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
 
