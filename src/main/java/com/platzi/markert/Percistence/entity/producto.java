@@ -3,7 +3,7 @@ package com.platzi.markert.Percistence.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class producto {
+public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
@@ -24,6 +24,10 @@ public class producto {
     private Integer cantidadStock;
 
     private Boolean estado;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
 
     public Integer getIdProducto() {
         return idProducto;
@@ -80,5 +84,4 @@ public class producto {
     public void setEstado(Boolean estado) {
         this.estado = estado;
     }
-
 }
