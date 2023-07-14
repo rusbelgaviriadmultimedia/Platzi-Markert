@@ -1,11 +1,6 @@
 package com.platzi.markert.Percistence.entity;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Entity;
-
-import jakarta.persistence.Id;
-
-import java.io.Serializable;
 
 @Entity
 public class producto {
@@ -20,7 +15,7 @@ public class producto {
     private Integer idCategoria;
 
     @Column(name = "codigo_barras")
-    estado codigoBarras;
+    private String codigoBarras;
 
     @Column(name = "precio_venta")
     private Double precioVenta;
